@@ -1,0 +1,13 @@
+# Archivos de LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Archivos de backup o temporales
+*.bak
+*.tmp
+*.swp
