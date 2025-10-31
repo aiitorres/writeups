@@ -1,0 +1,43 @@
+# ------------------------------
+# Git ignore para Write-ups de Pentesting
+# ------------------------------
+
+# Archivos binarios y pesados
+*.exe
+*.msi
+*.zip
+*.rar
+*.7z
+*.iso
+*.tar.gz
+
+# Archivos LaTeX temporales
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.bbl
+*.blg
+*.nav
+*.snm
+
+# Carpetas o contenidos temporales
+__pycache__/
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Carpetas de compilación o dependencias (si existieran)
+build/
+dist/
+node_modules/
+
+# Solo queremos conservar .pdf y .tex dentro de cada write-up
+# (asumiendo que tus PDFs están en carpetas como HTB/blue/content)
