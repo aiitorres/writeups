@@ -15,3 +15,11 @@
 *.msi
 latex/basic-miktex-24.1-x64.exe
 latex/strawberry-perl-5.42.0.1-64bit.msi
+
+# Ignorar todo dentro de la carpeta HTB
+HTB/*
+
+# Excepto carpetas con writeups PDF dentro de content
+!HTB/*/content/
+!HTB/*/content/*.pdf
+
