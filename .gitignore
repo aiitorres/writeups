@@ -11,3 +11,7 @@
 *.bak
 *.tmp
 *.swp
+*.exe
+*.msi
+latex/basic-miktex-24.1-x64.exe
+latex/strawberry-perl-5.42.0.1-64bit.msi
