@@ -44,8 +44,6 @@ Se descubrió un endpoint interesante:
 
 Este permitía introducir una URL → Vulnerabilidad SSRF confirmada.
 
----
-
 ### 2.2 SSRF descubierto
 
 El parámetro permitía consultas a:
@@ -104,8 +102,6 @@ Resultado:
 ```
 love\phoebe
 ```
-
----
 
 ### 3.3 Reverse Shell
 
