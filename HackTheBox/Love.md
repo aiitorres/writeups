@@ -151,8 +151,6 @@ Se confirmó:
 AlwaysInstallElevated = 1
 ```
 
----
-
 ### 4.2 Bypass de AppLocker
 
 Se observó que AppLocker restringía ejecución de MSI excepto en directorios específicos permitidos para:
@@ -181,8 +179,6 @@ Listener:
 ```bash
 rlwrap nc -lvnp 4444
 ```
-
----
 
 ### 4.4 Ejecución como SYSTEM
 
