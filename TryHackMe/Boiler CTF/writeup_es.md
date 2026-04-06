@@ -44,7 +44,7 @@ Resultados:
 55007/tcp open  ssh
 ```
 
-### Análisis:
+#### Análisis:
 
 - **Puerto 21 (FTP)** → Permite login anónimo
 - **Puerto 80 (HTTP)** → Aplicación web
@@ -53,7 +53,7 @@ Resultados:
 
 ---
 
-### FTP (Puerto 21)
+### 2.2 FTP (Puerto 21)
 
 Se accede con usuario anónimo:
 
@@ -79,7 +79,7 @@ Se identifica como **cifrado ROT13**, que al decodificar da:
 Just wanted to see if you find it. Lol. Remember: Enumeration is the key!
 ```
 
-### 2.2 Web
+### 2.3 Web
 
 Se revisa:
 
@@ -103,7 +103,7 @@ Contenido relevante:
 
 Muchos de estos son **rabbit holes**, diseñados para distraer
 
-### 2.3 Descubrimiento de Joomla
+### 2.4 Descubrimiento de Joomla
 
 Se identifica:
 
@@ -123,7 +123,7 @@ Resultados importantes:
 - `/configuration.php`
 - Directorios no estándar (potencialmente interesantes)
 
-### 2.4 Identificación de vulnerabilidad
+### 2.5 Identificación de vulnerabilidad
 
 Se detecta que el servidor utiliza:
 
