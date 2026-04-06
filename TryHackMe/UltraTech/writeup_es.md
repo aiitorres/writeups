@@ -147,8 +147,6 @@ docker run-v /:/mnt--rm-itbashchroot /mntsh
 
 Esto otorga acceso como **root**.
 
----
-
 ### 4.2 Obtención de evidencia
 
 Se accede a:
