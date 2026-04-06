@@ -76,7 +76,7 @@ Se identificaron credenciales hardcodeadas en el código.
 Se listaron servicios locales:
 
 ```
-ss-tulnp
+ss -tulnp
 ```
 
 Se detectó MongoDB en:
