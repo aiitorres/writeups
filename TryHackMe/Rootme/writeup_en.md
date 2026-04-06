@@ -63,7 +63,7 @@ http://10.48.147.3/
 
 The main page of the site is observed.
 
-![[Pasted image 20260223193559.png]]
+<img width="1116" height="483" alt="image" src="https://github.com/user-attachments/assets/d6164bea-db10-4d75-9f58-31e813a289b2" />
 
 We use:
 
