@@ -43,7 +43,8 @@ Accedemos a:
 http://10.48.147.3/
 ```
 Se observa la página principal del sitio.
-![[Pasted image 20260223193559.png]]
+<img width="1116" height="483" alt="image" src="https://github.com/user-attachments/assets/dc1b110b-20ff-43c1-8bae-e2bd047d20a4" />
+
 Se utilizó:
 ```bash
 ❯ wfuzz -c --hc 403,404 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt http://10.48.147.3/FUZZ
