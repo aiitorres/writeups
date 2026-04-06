@@ -232,10 +232,7 @@ Se encuentra:
 
 Binario explotable (GTFOBins)
 
----
-
-### 4.5 Explotación del binario
-
+### 4.5 Root
 ```bash
 find . -exec whoami \;
 ```
