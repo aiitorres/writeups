@@ -51,8 +51,6 @@ Resultados:
 - **Puerto 55007 (SSH)** → Acceso remoto no estándar
 - **Puerto 10000 (HTTP) →** No relevante en este caso
 
----
-
 ### 2.2 FTP (Puerto 21)
 
 Se accede con usuario anónimo:
