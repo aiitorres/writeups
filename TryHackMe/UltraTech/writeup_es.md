@@ -127,6 +127,8 @@ Se obtiene acceso al sistema.
 
 ## 4. Post-explotación
 
+### 4.1 Escalada de privilegios
+
 Una vez dentro, se procede a enumerar el sistema.
 
 Se detecta que el usuario pertenece al grupo:
@@ -134,8 +136,6 @@ Se detecta que el usuario pertenece al grupo:
 ```
 docker
 ```
-
-### 4.1 Escalada de privilegios
 
 Esto permite ejecutar contenedores con acceso al sistema host.
 
