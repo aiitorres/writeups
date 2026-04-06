@@ -1,3 +1,5 @@
+# Brute it
+
 ## 1. Introduction
 
 ### 1.1 Background
