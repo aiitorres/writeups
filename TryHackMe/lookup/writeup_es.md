@@ -15,8 +15,6 @@ Durante la explotación se identifican distintos vectores de ataque, incluyendo:
 - Explotación de una vulnerabilidad en un gestor de archivos web
 - Escalada de privilegios mediante abuso de binarios SUID
 
----
-
 ### 1.2 Objetivos
 
 - Enumerar los servicios expuestos en la máquina objetivo
@@ -25,8 +23,6 @@ Durante la explotación se identifican distintos vectores de ataque, incluyendo:
 - Explotar vulnerabilidades en servicios web
 - Escalar privilegios hasta obtener acceso root
 - Obtener las flags del sistema
-
----
 
 ## 2. Enumeración
 
@@ -44,8 +40,6 @@ Resultados relevantes:
 - 80/tcp → Apache 2.4.41
 
 Esto indica la presencia de un servidor web y acceso remoto mediante SSH.
-
----
 
 ### 2.2 Web
 
@@ -105,8 +99,6 @@ Credenciales obtenidas:
 jose:password123
 ```
 
----
-
 ### 3.2 Acceso a subdominio
 
 El sistema redirige a:
@@ -121,8 +113,6 @@ Se agrega al archivo `/etc/hosts`:
 echo "IP files.lookup.thm" >> /etc/hosts
 ```
 
----
-
 ### 3.3 Explotación de elFinder (Command Injection)
 
 Se identifica el uso de elFinder versión 2.1.47, la cual es vulnerable a inyección de comandos en el conector PHP.
@@ -134,8 +124,6 @@ python2.7 elfinder.py http://files.lookup.thm/elFinder/
 ```
 
 El endpoint vulnerable `connect.minimal.php` es accesible sin autenticación.
-
----
 
 ### 3.4 Obtención de reverse shell
 
@@ -197,9 +185,7 @@ Se utiliza una de las contraseñas para cambiar de usuario:
 su think
 ```
 
----
-
-### Escalada a root
+### 4.2 Escalada a root
 
 Se verifica el uso de sudo:
 
