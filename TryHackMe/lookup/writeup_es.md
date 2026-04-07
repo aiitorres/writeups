@@ -24,6 +24,8 @@ Durante la explotación se identifican distintos vectores de ataque, incluyendo:
 - Escalar privilegios hasta obtener acceso root
 - Obtener las flags del sistema
 
+---
+
 ## 2. Enumeración
 
 ### 2.1 Nmap
