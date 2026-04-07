@@ -98,7 +98,7 @@ A valid user is identified and returns a 302 status code.
 Credentials earned:
 
 ```
-joseph:password123
+jose:password123
 ```
 
 ### 3.2 Subdomain access
@@ -132,7 +132,7 @@ The vulnerable endpoint `connect.minimal.php` is accessible without authenticati
 A payload is generated to obtain an interactive shell:
 
 ```
-nc-lvnp 4444
+nc -lvnp 4444
 ```
 
 The payload is executed from the web shell and accessed as:
@@ -184,7 +184,7 @@ The content of the `.passwords` file is obtained.
 One of the passwords is used to change users:
 
 ```
-your think
+su think
 ```
 
 ### 4.2 Escalation to root
