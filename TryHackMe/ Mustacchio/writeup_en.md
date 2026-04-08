@@ -30,7 +30,7 @@ The scenario presents multiple chained attack vectors, where the attacker must d
 
 ### 2.1 Nmap
 
-An initial port scan was performed using Rustscan:
+An initial port scan was performed using Nmap:
 
 ```bash
 sudo nmap -p- -Pn -sS -n --min-rate 5000 <ip> -oN allports --open
