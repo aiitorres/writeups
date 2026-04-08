@@ -182,8 +182,6 @@ find / -perm -4000 -exec ls -ldb {} \; 2>/dev/null
 /home/joe/live_log
 ```
 
----
-
 #### Análisis del binario
 
 ```
@@ -218,8 +216,6 @@ export PATH=/tmp:$PATH
 ```
 /home/joe/live_log
 ```
-
----
 
 ### Resultado final
 
