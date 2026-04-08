@@ -29,7 +29,7 @@ El escenario presenta múltiples vectores de ataque encadenados, donde el atacan
 
 ### 2.1 Nmap
 
-Se realizó un escaneo inicial de puertos utilizando Rustscan:
+Se realizó un escaneo inicial de puertos utilizando Nmap:
 
 ```bash
 sudo nmap -p- -Pn -sS -n --min-rate 5000 <ip> -oN allports --open
