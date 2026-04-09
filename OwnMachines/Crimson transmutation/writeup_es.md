@@ -53,7 +53,7 @@ El sitio indica el uso de sistemas antiguos:
 
 Esto sugiere posibles vulnerabilidades en componentes legacy.
 
-### 2.3 FFuf
+### 2.3 Fuzzing
 ```bash
 ffuf -u http:<ip>/FUZZ -w /opt/seclists/Discovery/Web-Content/common.txt
 ```
