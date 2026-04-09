@@ -4,7 +4,7 @@
 
 ### 1.1 Antecedentes
 
-Crimson Transmutation es una máquina para principiantes enfocada en el desarrollo de habilidades de **enumeración, explotación web y escalada de privilegios en entornos Linux**.
+Crimson Transmutation es una máquina para principiantes, tematizada en el universo de Fullmetal Alchemist, enfocada en el desarrollo de habilidades de enumeración, explotación web y escalada de privilegios en entornos Linux.
 
 El escenario presenta un sistema web con un catálogo antiguo (legacy) vulnerable, lo que permite la explotación mediante **SQL Injection**, seguido de la obtención de credenciales y escalada de privilegios mediante una configuración insegura de `sudo`.
 
