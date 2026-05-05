@@ -25,7 +25,7 @@ El escenario presenta un sistema web con un catálogo antiguo (legacy) vulnerabl
 Se realiza un escaneo completo de puertos:
 
 ```bash
-sudo nmap -p- -Pn -sS -n --min-rate 5000 192.168.56.104 --open
+sudo nmap -p- -Pn -sS -n --min-rate 5000 <ip> --open
 ```
 Resultados:
 
