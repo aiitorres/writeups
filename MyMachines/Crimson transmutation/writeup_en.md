@@ -25,7 +25,7 @@ The scenario features a web system with a vulnerable legacy catalog, allowing ex
 A full port scan is performed:
 
 ```bash
-sudo nmap -p- -Pn -sS -n --min-rate 5000 192.168.56.104 --open
+sudo nmap -p- -Pn -sS -n --min-rate 5000 <ip> --open
 ```
 Results:
 
